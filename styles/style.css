@@ -12,7 +12,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 800px;
   margin: auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -101,6 +100,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__list {
@@ -160,7 +160,7 @@ ol {
   display: -webkit-box;
   font-weight: 400;
   font-size: 18px;
-  line-height: 16.2px;
+  line-height: 90%;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
@@ -289,7 +289,7 @@ ol {
   outline-offset: 1px;
 }
 
-.content__card-link_current:active {
+.content__card-link_current {
   background-color: rgba(84, 80, 80, 1);
 }
 
@@ -303,4 +303,8 @@ ol {
 
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
+}
+
+.content__card-link:active {
+  background-color: rgb(84, 80, 80, 1);
 }
